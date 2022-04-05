@@ -1,11 +1,18 @@
 package fun.challenge;
 
-import java.util.logging.Logger;
+import java.util.Scanner;
 
+/**
+ * ConnectFour main class is starting point
+ * and retrieve input from users (1 vs 1)
+ */
 public class ConnectFourMain {
-    private static final Logger logger = java.util.logging.Logger.getLogger(ConnectFourMain.class.getSimpleName());
-
     public static void main(String[] args) {
-        logger.info("Hello World");
+        // Console input Scanner
+        var scanner = new Scanner(System.in);
+
+        // Read input from user
+        var move = scanner.nextLine();
+        System.out.println("Selected column: " + move);
     }
 }
